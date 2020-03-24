@@ -1,0 +1,15 @@
+body {
+  background-color: #fff;
+  color: #31353a;
+  margin: 0;
+  padding: 10px;
+  font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+}
+
+#header {
+  text-align: center;
+}
+
+#navi a, #navi a:hover, #navi a:visited, #navi a:link, #navi a:active {
+  color: #31353a;
+}
