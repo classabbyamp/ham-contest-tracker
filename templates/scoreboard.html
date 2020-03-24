@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+    <table>
+      <tr>
+        <th>Contest</th>
+        <th>Call</th>
+        <th>QSOs</th>
+        <th>Points</th>
+        <th>Mults</th>
+        <th>Score</th>
+        <th>Last Updated</th>
+      </tr>
+      {% for row in data %}
+      <tr>
+        <td>{{ row.contest }}</td>
+        <td>{{ row.callsign }} ({{ row.ops }})</td>
+        <td>{{ row.qsos }}</td>
+        <td>{{ row.points }}</td>
+        <td>{{ row.mults }}</td>
+        <td>{{ row.score }}</td>
+        <td>{{ row.last_updated|fuzzydate }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+{% endblock %}
